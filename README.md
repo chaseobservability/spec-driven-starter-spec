@@ -66,6 +66,7 @@ Return the PR link and a concise summary of contract changes.
   - [`flows/create_todo_validation_error.yaml`](flows/create_todo_validation_error.yaml)
   - [`flows/list_todos_happy_path.yaml`](flows/list_todos_happy_path.yaml)
   - [`flows/get_todo_not_found.yaml`](flows/get_todo_not_found.yaml)
+- Flow fixtures can include optional SLO fields (`slo.max_step_latency_ms`, `slo.max_error_rate_pct`) and step latency assertions (`expect_latency_ms`).
 
 ## Key References
 - API contract: [`interfaces/api.openapi.yaml`](interfaces/api.openapi.yaml)
@@ -88,6 +89,7 @@ See [`SPEC_DRIVEN_DEVELOPMENT_PHILOSOPHY.md`](SPEC_DRIVEN_DEVELOPMENT_PHILOSOPHY
 - Agent map: [`AGENTS.md`](AGENTS.md)
 - Harness index: [`docs/index.md`](docs/index.md)
 - Starter pack contract: [`SDD_STARTER_PACK_CONTRACT.md`](SDD_STARTER_PACK_CONTRACT.md)
+- Doc-gardener automation: [`.github/workflows/doc-gardener.yml`](.github/workflows/doc-gardener.yml)
 - Philosophy: [`SPEC_DRIVEN_DEVELOPMENT_PHILOSOPHY.md`](SPEC_DRIVEN_DEVELOPMENT_PHILOSOPHY.md)
 - Engineering guidelines: [`docs/ENGINEERING_GUIDELINES.md`](docs/ENGINEERING_GUIDELINES.md)
 - ADR template: [`docs/decisions/ADR_TEMPLATE.md`](docs/decisions/ADR_TEMPLATE.md)

@@ -54,3 +54,6 @@ jobs:
           test -f docs/exec-plans/tech-debt-tracker.md
           test -d docs/exec-plans/active
           test -d docs/exec-plans/completed
+
+      - name: Harness lint
+        run: python3 tooling/harness_lint.py

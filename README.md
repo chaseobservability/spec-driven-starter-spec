@@ -17,6 +17,7 @@ cd spec-driven-starter-spec
 Validate the starter contracts locally:
 
 ```bash
+python3 tooling/harness_lint.py
 python3 - <<'PY'
 import yaml, json, glob
 yaml.safe_load(open("interfaces/api.openapi.yaml","r",encoding="utf-8"))

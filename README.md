@@ -8,7 +8,7 @@ Inspired by Sean Grove’s talk (Spec-Driven Development): [YouTube](https://you
 
 Harness engineering reference: [OpenAI Harness Engineering](https://openai.com/index/harness-engineering/)
 
-## Quickstart
+## Get Started
 ```bash
 git clone git@github.com:chaseobservability/spec-driven-starter-spec.git
 cd spec-driven-starter-spec
@@ -65,7 +65,7 @@ Return the PR link and a concise summary of contract changes.
   - [`flows/create_todo_happy_path.yaml`](flows/create_todo_happy_path.yaml)
   - [`flows/create_todo_validation_error.yaml`](flows/create_todo_validation_error.yaml)
 
-## Where to start
+## Key References
 - API contract: [`interfaces/api.openapi.yaml`](interfaces/api.openapi.yaml)
 - Schemas: [`schemas/`](schemas/)
 - Flows: [`flows/`](flows/)

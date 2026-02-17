@@ -16,6 +16,16 @@ Harness engineering reference: [OpenAI Harness Engineering](https://openai.com/i
 - Acceptance criteria
 - Release and governance docs
 
+## Starter examples
+- Todo API paths in OpenAPI:
+  - [`interfaces/api.openapi.yaml`](interfaces/api.openapi.yaml) (`POST /todos`, `GET /todos`, `GET /todos/{id}`)
+- Todo schemas:
+  - [`schemas/todo-create-request.schema.json`](schemas/todo-create-request.schema.json)
+  - [`schemas/todo-item.schema.json`](schemas/todo-item.schema.json)
+- Todo acceptance flows:
+  - [`flows/create_todo_happy_path.yaml`](flows/create_todo_happy_path.yaml)
+  - [`flows/create_todo_validation_error.yaml`](flows/create_todo_validation_error.yaml)
+
 ## Where to start
 - API contract: [`interfaces/api.openapi.yaml`](interfaces/api.openapi.yaml)
 - Schemas: [`schemas/`](schemas/)

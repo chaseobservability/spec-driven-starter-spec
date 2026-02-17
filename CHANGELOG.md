@@ -3,6 +3,7 @@
 ## 0.1.4 — 2026-02-17
 - Expand flow coverage with list and not-found journeys.
 - Add SLO metadata in flow fixtures to support runtime latency/error-budget assertions.
+- Add scheduled doc-gardener automation for low-risk docs drift fixes.
 
 ## 0.1.3 — 2026-02-17
 - Add harness lint script and CI enforcement for harness structure/documentation integrity.

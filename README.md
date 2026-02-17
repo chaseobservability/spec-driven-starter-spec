@@ -28,12 +28,23 @@ print("OK: OpenAPI, schemas, and flows parse")
 PY
 ```
 
-Make your first spec change:
-1. Update OpenAPI in [`interfaces/api.openapi.yaml`](interfaces/api.openapi.yaml).
-2. Add or update related schemas in [`schemas/`](schemas/).
-3. Add or update acceptance fixtures in [`flows/`](flows/).
-4. Update [`CHANGELOG.md`](CHANGELOG.md) for user-visible changes.
-5. Open a PR and ensure CI is green.
+Agent-first first spec change:
+1. Ask Codex to execute the change end-to-end.
+2. Review intent and acceptance criteria in the PR.
+3. Merge only after CI is green.
+
+Suggested Codex prompt:
+```text
+Implement a spec change for <feature> in this repository.
+Do it end-to-end:
+- update interfaces/api.openapi.yaml
+- add/update related schemas in schemas/
+- add/update acceptance fixtures in flows/
+- update CHANGELOG.md for user-visible changes
+- run local validation checks
+- open/push a PR and iterate until CI is green
+Return the PR link and a concise summary of contract changes.
+```
 
 ## What belongs here
 - API contract (OpenAPI)

@@ -5,6 +5,7 @@ A **contract-first spec** starter template designed to be paired with:
 - https://github.com/chaseobservability/spec-driven-starter-implementation
 
 Inspired by Sean Grove’s talk (Spec-Driven Development): https://youtu.be/8rABwKRsec4
+
 Harness engineering reference: https://openai.com/index/harness-engineering/
 
 ## What belongs here

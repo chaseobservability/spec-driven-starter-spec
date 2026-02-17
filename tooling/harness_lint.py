@@ -18,6 +18,8 @@ REQUIRED_FILES = [
     "docs/product-specs/index.md",
     "docs/references/index.md",
     "docs/exec-plans/tech-debt-tracker.md",
+    ".github/workflows/doc-gardener.yml",
+    "tooling/doc_gardener.py",
 ]
 
 REQUIRED_DIRS = [

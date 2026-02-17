@@ -8,6 +8,33 @@ Inspired by Sean Grove’s talk (Spec-Driven Development): [YouTube](https://you
 
 Harness engineering reference: [OpenAI Harness Engineering](https://openai.com/index/harness-engineering/)
 
+## Quickstart
+```bash
+git clone git@github.com:chaseobservability/spec-driven-starter-spec.git
+cd spec-driven-starter-spec
+```
+
+Validate the starter contracts locally:
+
+```bash
+python3 - <<'PY'
+import yaml, json, glob
+yaml.safe_load(open("interfaces/api.openapi.yaml","r",encoding="utf-8"))
+for p in glob.glob("schemas/*.json"):
+  json.load(open(p,"r",encoding="utf-8"))
+for p in glob.glob("flows/*.yaml"):
+  yaml.safe_load(open(p,"r",encoding="utf-8"))
+print("OK: OpenAPI, schemas, and flows parse")
+PY
+```
+
+Make your first spec change:
+1. Update OpenAPI in [`interfaces/api.openapi.yaml`](interfaces/api.openapi.yaml).
+2. Add or update related schemas in [`schemas/`](schemas/).
+3. Add or update acceptance fixtures in [`flows/`](flows/).
+4. Update [`CHANGELOG.md`](CHANGELOG.md) for user-visible changes.
+5. Open a PR and ensure CI is green.
+
 ## What belongs here
 - API contract (OpenAPI)
 - Data contracts (JSON Schemas)

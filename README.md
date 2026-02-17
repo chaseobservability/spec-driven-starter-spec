@@ -64,6 +64,8 @@ Return the PR link and a concise summary of contract changes.
 - Todo acceptance flows:
   - [`flows/create_todo_happy_path.yaml`](flows/create_todo_happy_path.yaml)
   - [`flows/create_todo_validation_error.yaml`](flows/create_todo_validation_error.yaml)
+  - [`flows/list_todos_happy_path.yaml`](flows/list_todos_happy_path.yaml)
+  - [`flows/get_todo_not_found.yaml`](flows/get_todo_not_found.yaml)
 
 ## Key References
 - API contract: [`interfaces/api.openapi.yaml`](interfaces/api.openapi.yaml)

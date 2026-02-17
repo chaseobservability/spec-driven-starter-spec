@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4 — 2026-02-17
+- Expand flow coverage with list and not-found journeys.
+- Add SLO metadata in flow fixtures to support runtime latency/error-budget assertions.
+
 ## 0.1.3 — 2026-02-17
 - Add harness lint script and CI enforcement for harness structure/documentation integrity.
 - Refine README onboarding headings for clearer navigation.

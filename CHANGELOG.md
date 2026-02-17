@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 — 2026-02-17
+- Add harness lint script and CI enforcement for harness structure/documentation integrity.
+- Refine README onboarding headings for clearer navigation.
+
 ## 0.1.2 — 2026-02-17
 - Add concrete starter spec examples for a Todo domain:
   - OpenAPI paths (`POST /todos`, `GET /todos`, `GET /todos/{id}`)
